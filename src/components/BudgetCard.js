@@ -24,10 +24,10 @@ const BudgetCard = ({ name, amount, max, gray, onAddExpenseClick, hideButton, on
           <div className='me-2'>{name}</div>
           <div className='d-flex align-items-baseline'>
             {currencyFormatter.format(amount)}
-            {max && <span className='text-muted fs-6 ms-1'>/ {currencyFormatter.format(max)}</span>}
+            {max !== 0 && <span className='text-muted fs-6 ms-1'>/ {currencyFormatter.format(max)}</span>}
           </div>
         </Card.Title>
-        {max && (
+        {max !== 0 && (
           <ProgressBar
             className='rounded-pill mb-4'
             variant={getProgressBarVariant(amount, max)}
