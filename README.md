@@ -2,4 +2,6 @@
 
 keep track of your Budget
 <br/>
-[visit website](https://budget-man.netlify.app/)
+![](assets/screeshot.JPG)
+
+##for visit: [visit website](https://budget-man.netlify.app/)
